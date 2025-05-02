@@ -24,7 +24,7 @@ delta1 <- sample(c(0, 1), 100, replace = TRUE)
 delta2 <- 1 - delta1
 x <- rexp(100, rate = 1/2)
 Initialize(features, x, delta1, delta2, h = 1e-3)
-params <- rep(0.001, 2 * (ncol(features) + 3))
+params <- rep(0.001, (ncol(features) + 3))
 y <- 0.07
 z <- features[1, ]
 (cdf_value <- F_cdf_rcpp(params, z, y))

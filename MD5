@@ -1,6 +1,6 @@
-c58c40c0e0cad6782325cd3db63e14e9 *DESCRIPTION
+47650c6526055aa6d0f1471a7d62f66c *DESCRIPTION
 4d7f5be9e05cc3dfafa91881c58d21f3 *NAMESPACE
-c92162e491483c535927aea58367a906 *R/RCode.r
+c1c5bb2c8a3d9f5fd8099209755f1e10 *R/RCode.r
 13b1980fe37401024a906fb74103e66d *R/RcppExports.R
 d6c4c73b4056143919705af17cd0ec66 *R/data.r
 c60206ebcb50299685b96f491025d329 *R/globals.r
@@ -10,9 +10,9 @@ dc280eebb75ed8fb907caf9f465fdabd *man/CIF_Figs.Rd
 7e85262138379388dee1dc9ac6645443 *man/CIF_res1.Rd
 b40efb6f1885ae9a2d3e82454f556e64 *man/Cleanup.Rd
 65362676465826e64803330878b062dc *man/Cmpp_CIF.Rd
-fcc3d62fabb48fc6a988df6461f777db *man/F_cdf_rcpp.Rd
-4809a76622d235f0ecfe0697e6a6d46e *man/F_cdf_rcpp2.Rd
-54a9deb2d76de7dfc0dcb4d17cb52502 *man/F_cdf_rcpp3.Rd
+e547e44c2125da90186aad65727c2891 *man/F_cdf_rcpp.Rd
+c69dfbcf2ec3c778ed1258bf22f3890a *man/F_cdf_rcpp2.Rd
+ee4d8846dea029fb8dbaaea74fe7f2f2 *man/F_cdf_rcpp3.Rd
 19811ceacaf0e116548fd82fc10c9770 *man/FineGray_Model.Rd
 d48a142bed814d92a146c78afa2d8616 *man/GetData.Rd
 6f392c1067440e9dc6fbe71c61b74b1a *man/GetDim.Rd
@@ -31,9 +31,9 @@ c109c3775e249d312bbfb22d343edaee *man/estimate_parameters.Rd
 cbb8174aad4ea3af958bb2c7736325dc *man/estimate_parameters_GOR.Rd
 d8b6f58570f7924b699ef08768c7ad61 *man/estimate_parameters_PHM.Rd
 dfeedf325329f94caf5084c1bda0d0fe *man/estimate_parameters_POM.Rd
-80bdf42153a506c5ec5850c43d260bdf *man/f_pdf_rcpp.Rd
-84db464bdd623d43790b9387bc618ee6 *man/f_pdf_rcpp2.Rd
-4c91f1d5d11d559db18c92dfe2eeed54 *man/f_pdf_rcpp3.Rd
+d04eea2562f6923163d0988cf00d654a *man/f_pdf_rcpp.Rd
+a11ff48772dc21fbe3112cb4d08a635a *man/f_pdf_rcpp2.Rd
+544546c03297e7e42de0a4b112359dac *man/f_pdf_rcpp3.Rd
 4f0a23d5c721a0924c50a6e5b4ddb1d7 *man/fertility_data.Rd
 b61faf786890e75e6ab68fb451d7d7c2 *man/log_f_rcpp.Rd
 b20d54e15f76de5bc509c188a53901c8 *man/log_f_rcpp2.Rd
@@ -41,5 +41,5 @@ ee4304c51d37e666b3d03601831d445a *man/log_f_rcpp3.Rd
 42f5cb16d19476725a68b27228b07a21 *man/makeMat.Rd
 4202b540c1dbf54453e3fa081df01ff8 *man/make_Dummy.Rd
 8e155d94f3a5c666bd46d6eb56b559d1 *man/pdf_gomp.Rd
-c3f24427f120507129285a4fa34c55d8 *src/CppCodes.cpp
+0236864a3630e57b2fecec70d78d70a8 *src/CppCodes.cpp
 42a3bfcdc958cb76cca518d37610efaf *src/RcppExports.cpp

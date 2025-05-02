@@ -24,7 +24,7 @@ delta1 <- sample(c(0, 1), 100, replace = TRUE)
 delta2 <- 1 - delta1
 x <- rexp(100, rate = 1/9)
 Initialize(features, x, delta1, delta2, h = 1e-4)
-params <- rep(0.001, 2 * (ncol(features) + 2))
+params <- rep(0.001, (ncol(features) + 2))
 pdf_value <- f_pdf_rcpp2(params, features[1, ], x[3])
 print(pdf_value)
 

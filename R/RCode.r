@@ -823,7 +823,7 @@ make_Dummy <- function(Data = dat, features = c('sex', 'cause_burn'), reff = "fi
 #' delta2 <- 1 - delta1
 #' x <- rexp(100, rate = 1/10)
 #' Initialize(features, x, delta1, delta2, h = 1e-5)
-#' params <- rep(0.001, 2 * (ncol(features) + 3))
+#' params <- rep(0.001, (ncol(features) + 3))
 #' pdf_value <- f_pdf_rcpp(params, features[1, ], x[3])
 #' print(pdf_value)
 #'
@@ -845,7 +845,7 @@ NULL
 #' delta2 <- 1 - delta1
 #' x <- rexp(100, rate = 1/2)
 #' Initialize(features, x, delta1, delta2, h = 1e-3)
-#' params <- rep(0.001, 2 * (ncol(features) + 3))
+#' params <- rep(0.001, (ncol(features) + 3))
 #' y <- 0.07
 #' z <- features[1, ]
 #' (cdf_value <- F_cdf_rcpp(params, z, y))
@@ -1036,7 +1036,7 @@ NULL
 #' delta2 <- 1 - delta1
 #' x <- rexp(100, rate = 1/9)
 #' Initialize(features, x, delta1, delta2, h = 1e-4)
-#' params <- rep(0.001, 2 * (ncol(features) + 2))
+#' params <- rep(0.001, (ncol(features) + 2))
 #' pdf_value <- f_pdf_rcpp2(params, features[1, ], x[3])
 #' print(pdf_value)
 #'
@@ -1058,7 +1058,7 @@ NULL
 #' delta2 <- 1 - delta1
 #' x <- rexp(100, rate = 1/2)
 #' Initialize(features, x, delta1, delta2, h = 1e-5)
-#' params <- rep(0.001, 2 * (ncol(features) + 2))
+#' params <- rep(0.001, (ncol(features) + 2))
 #' x <- 2
 #' cdf_value <- F_cdf_rcpp2(params, features[1, ], x)
 #' print(cdf_value)
@@ -1230,7 +1230,7 @@ NULL
 #' delta2 <- 1 - delta1
 #' x <- rexp(100, rate = 1)
 #' Initialize(features, x, delta1, delta2, h = 1e-5)
-#' params <- rep(0.0001, 2 * (ncol(features) + 2))
+#' params <- rep(0.0001, (ncol(features) + 2))
 #' pdf_value <- f_pdf_rcpp3(params, features[4, ], x[4])
 #' print(pdf_value)
 #' 
@@ -1252,7 +1252,7 @@ NULL
 #' delta2 <- 1 - delta1
 #' x <- rexp(100, rate = 1/10)
 #' Initialize(features, x, delta1, delta2, h = 1e-5)
-#' params <- rep(0.001, 2 * (ncol(features) + 2))
+#' params <- rep(0.001, (ncol(features) + 2))
 #' x <- 5
 #' cdf_value <- F_cdf_rcpp3(params, features[1, ], x)
 #' print(cdf_value)
@@ -1650,12 +1650,12 @@ Cmpp_CIF <- function(featureID = NULL, featureValue = NULL, RiskNames = NULL,
   Par1 <- estimate_parameters_GOR(rep(0.01, 2*(3 + GetDim()$Nfeature)))
   Par2 <- estimate_parameters_POM(rep(0.01, 2*(2 + GetDim()$Nfeature)))
   Par3 <- estimate_parameters_PHM(rep(0.01, 2*(2 + GetDim()$Nfeature)))
-  Par11 <- Par1[1:3, 2]
-  Par12 <- Par1[(4 + GetDim()$Nfeature):(4 + GetDim()$Nfeature + 2), 2] 
-  Par21 <- Par2[1:2, 2]
-  Par22 <- Par2[(3 + GetDim()$Nfeature):(3 + GetDim()$Nfeature + 1), 2]
-  Par31 <- Par3[1:2, 2]
-  Par32 <- Par3[(3 + GetDim()$Nfeature):(3 + GetDim()$Nfeature + 1), 2]
+  Par11 <- Par1[1:(GetDim()$Nfeature + 3), 2]
+  Par12 <- Par1[(4 + GetDim()$Nfeature):(dim(Par1)[1]), 2] 
+  Par21 <- Par2[1:(GetDim()$Nfeature + 2), 2]
+  Par22 <- Par2[(3 + GetDim()$Nfeature):(dim(Par2)[1]), 2]
+  Par31 <- Par3[1:(GetDim()$Nfeature + 2), 2]
+  Par32 <- Par3[(3 + GetDim()$Nfeature):(dim(Par3)[1]), 2]
   StoreTime <- predTime
   if(is.null(predTime)) {
     predTime <- GetData()$timee  

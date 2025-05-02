@@ -1,8 +1,8 @@
 Package: cmpp
 Type: Package
-Title: Parametric Methods for Cumulative Incidence Functions in
-        Competing Risks
-Version: 0.0.1
+Title: Direct Parametric Inference for the Cumulative Incidence
+        Function in Competing Risks
+Version: 0.0.2
 Date: 2025-04-16
 Authors@R: person(given = "Habib",
                  family = "Ezzatabadipour",
@@ -24,8 +24,8 @@ Encoding: UTF-8
 RoxygenNote: 7.3.2
 Suggests: roxygen2
 NeedsCompilation: yes
-Packaged: 2025-04-29 19:06:43 UTC; habib
+Packaged: 2025-05-02 18:22:34 UTC; habib
 Author: Habib Ezzatabadipour [aut, cre]
 Maintainer: Habib Ezzatabadipour <habibezati@outlook.com>
 Repository: CRAN
-Date/Publication: 2025-05-02 09:50:06 UTC
+Date/Publication: 2025-05-02 22:00:10 UTC
